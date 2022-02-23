@@ -15,7 +15,8 @@ contract ZombieFactory {
   
 // Addition: x + y, Subtraction: x - y, Multiplication: x * y, Division: x / y
 // 10** equal to 10^
-    
+//To make sure our Zombie's DNA is only 16 characters, let's make another uint equal to 10^16. That way we can later use the modulus operator % to shorten an integer to 16 digits.    
+
     uint dnaModulus = 10 ** dnaDigits;
 
 //Strings are used for arbitrary-length UTF-8 data. eg. string greeting = "Hello world!"
